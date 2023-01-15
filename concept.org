@@ -40,8 +40,6 @@ title rather than its file system name.
   -rw-r--r--   1 ken  ken  11900 Oct 22 19:18 Hard drive candidates
 #+end_src
 
-Selecting a file opens it.
-
 Toggle between the file's canonical and virtual names.
 
 #+begin_src org
@@ -52,4 +50,19 @@ Toggle between the file's canonical and virtual names.
   -rw-r--r--   1 ken  ken   8911 Jan 11 09:55 e/2/e27d290ebcfe9.org
   -rw-r--r--   1 ken  ken  49002 Dec 22 18:19 Deploy Local Network Storage Services
   -rw-r--r--   1 ken  ken  11900 Oct 22 19:18 d/b/db6e7875c1efc.org
+#+end_src
+
+* Each search captures changes to the hierarchy
+
+If tag relationships change, repeating a search will capture and those changes.
+
+#+begin_src org
+  (tag:projects tag:notes) AND tag:SAN:
+  total used 109.2 KiB
+  -rw-r--r--   1 ken  ken  98220 Dec 31 08:12 Evaluate Alpine Linux on hp04
+  -rw-r--r--   1 ken  ken  61677 Jan 10 21:12 Evaluate OpenBSD on hp04
+  -rw-r--r--   1 ken  ken   8911 Jan 11 09:55 Copy data from stor013
+  -rw-r--r--   1 ken  ken  49002 Dec 22 18:19 Deploy Local Network Storage Services
+  -rw-r--r--   1 ken  ken  11900 Oct 22 19:18 Hard drive candidates
+  -rw-r--r--   1 ken  ken   9190 Jan 14 20:01 Transfer content from existing NAS
 #+end_src
